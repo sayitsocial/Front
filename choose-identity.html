@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../static/css/SayItSocial.css">
+    <link rel="stylesheet" href="static/css/SayItSocial.css">
 
 
-    <title>Login</title>
+    <title>Identity</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172447429-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,33 +23,22 @@
     </script>
 </head>
 
-<body class="login">
+<body class="identity">
     <!-- ########################################### -->
-    <main class="login-body ">
-        <div class="login-top">
-            <img class="img-fluid" src="../static/images/Sayitsocial Logo.svg" alt="Can't load Logo">
-            <p class="m-0">Login as Organisation</p>
+    <main class="identity-body">
+        <div class="identity-top">
+            <img class="img-fluid" src="static/images/Sayitsocial Logo.svg" alt="Can't load Logo">
+            <p class="m-0">Choose an Identity</p>
         </div>
-        <div class="login-main ">
-            <form method="post">
-                <div class="login-inputs">
-                    <div class="inp-border mb-5 mx-auto">
-                        <i style="margin: 0 12px 5px 0; font-size: 19px; opacity: 0.85;" class="fa fa-envelope" aria-hidden="true"></i> <input
-                            name="email" placeholder="Email" required type="text">
-                    </div>
-                    <div class="inp-border mb-4 mx-auto">
-                        <i class="fas fa-lock" style="margin: 0 12px 5px 0; font-size: 19px; opacity: 0.85;"></i> <input
-                            name="password" placeholder="Password" required type="password">
-                    </div>
-                    <div class="d-flex justify-content-end"><a class="text-decoration-none" href="#">Forgot
-                            Password?</a></div>
+        <div class="identity-main ">
+            <div class="d-flex">
+                <div class="border-0 w-50 d-flex justify-content-end choice-1">
+                    <a href="#"><img class="card-img-top img-fluid" src="static/images/indentity-volunteer.svg" alt="Volunteer"></a>
                 </div>
-                <span class="d-flex">
-                    <p class="mr-2">Don't have an account?</p>
-                    <a class="text-decoration-none" href="#">Sign Up!</a>
-                </span>
-                <button class="btn" type="submit">Login</button>
-            </form>
+                <div class="border-0 w-50 d-flex justify-content-start choice-2">
+                    <a href="#"><img class="card-img-top img-fluid " src="static/images/identity-org.svg" alt="Organisation"></a>
+                </div>
+            </div>
         </div>
         </div>
     </main>
