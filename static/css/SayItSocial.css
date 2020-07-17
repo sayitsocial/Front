@@ -6,7 +6,7 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	height: 100vh;
-        width: auto;
+	width: auto;
 }
 .login-body,
 .signup-body {
@@ -110,7 +110,8 @@
 	height: 100vh;
 	overflow: hidden;
 }
-.identity-top p { /* heading- choose an indentity */
+.identity-top p {
+	/* heading- choose an indentity */
 	color: #06bdf7;
 	text-align: center;
 	font-size: 40px;
@@ -118,17 +119,18 @@
 	position: relative;
 	top: -165px;
 }
-.identity-main img { /* choices */
+.identity-main img {
+	/* choices */
 	width: 400px;
 	height: 430px;
 	position: relative;
 	top: -6.5rem;
 	cursor: pointer;
 }
-.choice-1{
+.choice-1 {
 	margin-right: 4.5em;
 }
-.choice-2{
+.choice-2 {
 	margin-left: 4.5rem;
 }
 /* IDENTITY PAGE ENDS */
