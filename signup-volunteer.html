@@ -2,9 +2,15 @@
 <html lang="en">
 
 <head>
+
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+   
+      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="assets/app.js" ></script>
+
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,6 +27,8 @@
         gtag('js', new Date());
         gtag('config', 'UA-172447429-1');
     </script>
+    
+    
 </head>
 
 <body class="signup">
@@ -35,18 +43,19 @@
                 <div class="signup-inputs">
                     <div class="inp-border mb-5 mx-auto">
                         <i class="fas fa-user" style="margin: 0 12px 5px 0; font-size: 19px; opacity: 0.85;"></i> <input
-                            name="name" placeholder="Name" required type="text">
+                            name="name" id="name10" placeholder="Name" required type="text">
                     </div>
                     <div class="inp-border mb-5 mx-auto">
                         <i style="margin: 0 12px 5px 0; font-size: 19px; opacity: 0.85;" class="fa fa-envelope" aria-hidden="true"></i>
-                        <input name="email" placeholder="Email" required type="text">
+                        <input name="email" id="email10" placeholder="Email" required type="text">
                     </div>
                     <div class="inp-border mb-4 mx-auto">
+                        
                         <i class="fas fa-lock" style="margin: 0 12px 5px 0; font-size: 19px; opacity: 0.85;"></i> <input
-                            name="password" placeholder="Password" required type="password">
+                            name="password" id="password10" placeholder="Password" required type="password">
                     </div>
                 </div>
-                <button class="btn" type="submit">Signup</button>
+                <button class="btn" id="button10" type="button">Signup</button>
                 <span class="d-flex mt-4">
                     <p class="mr-2">Already have an account?</p>
                     <a class="text-decoration-none" href="#">Login!</a>
