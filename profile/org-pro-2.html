@@ -1,303 +1,512 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="/static/css/profile.css" />
+    <link rel="stylesheet" href="/static/css/navbarfooter.css" />
     <title>organisational Pofile</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <style>
-    html {font-size: 14px; overflow-x: hidden;}
-    main{padding-left: 30px;padding-right: 30px;}
-    .container {max-width: 1100px;}
-    .jumbotron{padding: 2rem 2rem;}
-    a.btn.btn-basic.align-right {margin-left: auto; margin-top: -25px;}
+    html {
+      font-size: 14px;
+      overflow-x: hidden;
+    }
+    main {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .container {
+      max-width: 1250px;
+    }
+    .jumbotron {
+      padding: 2rem 2rem;
+    }
+    a.btn.btn-basic.align-right {
+      margin-left: auto;
+      margin-top: -25px;
+    }
 
     /* Footer */
-    .footer { background-color: #111111; padding-top: 80px; color: #fff; font-weight: 400; font-size: 17px; }
-    .footer-line { border-color: #afafaf; }
-    .footer-widget { padding-bottom: 50px; }
-    .footer-title { font-size: 24px; font-weight: 600; margin-bottom: 44px; color: #fff; }
-    .footer-widget ul li a { text-transform: capitalize; font-size: 17px; color: #fff; display: block; font-weight: 600; }
-    .footer-widget ul li a:hover { color: #fff; }
-    .tiny-footer { font-size: 14px; padding: 25px 0px; font-weight: 600; background-color: transparent; border-top: 1px solid #afafaf; color: #888d90; line-height: 1; }
-
+    .footer {
+      background-color: #111111;
+      padding-top: 80px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 17px;
+    }
+    .footer-line {
+      border-color: #afafaf;
+    }
+    .footer-widget {
+      padding-bottom: 50px;
+    }
+    .footer-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 44px;
+      color: #fff;
+    }
+    .footer-widget ul li a {
+      text-transform: capitalize;
+      font-size: 17px;
+      color: #fff;
+      display: block;
+      font-weight: 600;
+    }
+    .footer-widget ul li a:hover {
+      color: #fff;
+    }
+    .tiny-footer {
+      font-size: 14px;
+      padding: 25px 0px;
+      font-weight: 600;
+      background-color: transparent;
+      border-top: 1px solid #afafaf;
+      color: #888d90;
+      line-height: 1;
+    }
 
     /* //Media Query */
     @media (min-width: 768px) {
-        html {
-            font-size: 16px;
-        }
+      html {
+        font-size: 16px;
+      }
     }
   </style>
   <body>
     <!-- //Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom mb-3">
-            <a class="navbar-brand" href="#"><img src="https://picsum.photos/id/1005/50"> SayItSocial</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#"> icon</a> 
-                    </li> 
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#"> icon</a> 
-                    </li> 
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#"> icon</a> 
-                    </li> 
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#"> icon</a> 
-                    </li> 
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#"> icon</a> 
-                    </li> 
-                  </ul>
-            </div>
-        </nav>        
+      <nav class="navbar navbar-expand-lg navbar-light row">
+        <div class="col-md-3">
+          <a class="navbar-brand d-flex text-dark align-items-center" href="#">
+            <img
+              src="/static/assets/navbar/sayitsocial.svg"
+              class="d-inline-block align-top mr-2"
+              alt=""
+            />
+            <div class="mb-1">SayItSocial</div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-md-6">
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2 ml-md-5 w-75"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="/static/assets/navbar/bx-home-alt.svg" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/static/assets/navbar/fi-list.svg" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/static/assets/navbar/bx-bell.svg" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/static/assets/navbar/fi-user.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <div class="jumbotron">            
-            <div class="row">
-                <a class="btn btn-basic align-right" role="button">icon</a>
+      <div class="jumbotron">
+        <div class="row"></div>
+        <div class="col-sm-12 mx-auto">
+          <div id="main-row" class="row">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto">
+              <img
+                class="rounded-circle"
+                src="https://picsum.photos/id/237/250"
+              />
             </div>
-            <div class="col-sm-12 mx-auto">                    
-                    <div class="row"> 
-                        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto">
-                            <img src="https://picsum.photos/id/237/250">
-                        </div>
-                        
-                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-auto">
-                            <h1>Child in Need Institute</h1>
-                            <h5><b>Kolkata, India</b>  &nbsp;&nbsp;&nbsp; <b>President:</b> Samir Chaudhari</h5>
-                            <h6> <b>Joined Since :</b> Aug 2020</h6>
-                            <a class="btn btn-primary" href="../../components/navbar/" role="button">View Past Events</a>
-                        </div>
-                        
-                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-auto">
-                            <h1>24</h1>
-                            <h4>Events Hosted</h4>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-auto">
-                            <h1>13.8k</h1>
-                            <h4>Flollwers</h4>
-                        </div>
-                </div>
+
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-auto">
+              <h1 class="mb-3">Child in Need Institute</h1>
+              <h5 class="mb-2">
+                <b>Kolkata, India</b> &nbsp;&nbsp;&nbsp; <b>President:</b> Samir
+                Chaudhari
+              </h5>
+              <h6><b>Joined Since :</b> Aug 2020</h6>
             </div>
+
+            <div
+              class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-auto host-follow"
+            >
+              <h1>24</h1>
+              <h4>Events Hosted</h4>
+            </div>
+            <div
+              class="col-xl-1 col-lg-1 col-md-12 col-sm-12 col-auto host-follow"
+            >
+              <h1>13.8k</h1>
+              <h4>Flollwers</h4>
+            </div>
+            <div
+              class="col-xl-1 col-lg-1 col-md-12 col-sm-12 col-auto pt-3 pl-5"
+            >
+              <a class="btn btn-basic align-right settings" role="button"
+                ><img src="/static/assets/profile/bx-cog.svg" alt=""
+              /></a>
+            </div>
+          </div>
         </div>
-        <div class="jumbotron">
-            <div class="col-sm-12 mx-auto">
-                <center><h3>Events Hosted</h3> </center>
-                <div class="row mb-3"> 
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
-                        <div class="card">
-                            <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
-                            <div class="card-img-overlay">
-                                <div class="row">   
-                                    <div class="col-6"><p class="card-title">Donations <br> 23 Aug 2020</p></div>
-                                    <div class="col-6"><img src="https://picsum.photos/id/1002/50" alt="Card image cap"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
-                        <div class="card">
-                            <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
-                            <div class="card-img-overlay">
-                                <div class="row">   
-                                    <div class="col-6"><p class="card-title">Donations <br> 23 Aug 2020</p></div>
-                                    <div class="col-6"><img src="https://picsum.photos/id/1002/50" alt="Card image cap"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
-                        <div class="card">
-                            <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
-                            <div class="card-img-overlay">
-                                <div class="row">   
-                                    <div class="col-6"><p class="card-title">Donations <br> 23 Aug 2020</p></div>
-                                    <div class="col-6"><img src="https://picsum.photos/id/1002/50" alt="Card image cap"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
+      </div>
+      <div class="jumbotron">
+        <div class="col-sm-12 mx-auto">
+          <center><h3 class="mb-4">Events Hosted</h3></center>
+          <div class="row mb-3">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://picsum.photos/id/1005/300/200"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="card-title">
+                        Donations <br />
+                        23 Aug 2020
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="https://picsum.photos/id/1002/50"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="row"> 
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
-                        <div class="card">
-                            <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
-                            <div class="card-img-overlay">
-                                <div class="row">   
-                                    <div class="col-6"><p class="card-title">Donations <br> 23 Aug 2020</p></div>
-                                    <div class="col-6"><img src="https://picsum.photos/id/1002/50" alt="Card image cap"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
-                        <div class="card">
-                            <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
-                            <div class="card-img-overlay">
-                                <div class="row">   
-                                    <div class="col-6"><p class="card-title">Donations <br> 23 Aug 2020</p></div>
-                                    <div class="col-6"><img src="https://picsum.photos/id/1002/50" alt="Card image cap"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
-                        <div class="card">
-                            <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
-                            <div class="card-img-overlay">
-                                <div class="row">   
-                                    <div class="col-6"><p class="card-title">Donations <br> 23 Aug 2020</p></div>
-                                    <div class="col-6"><img src="https://picsum.photos/id/1002/50" alt="Card image cap"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-                <a href="">See More</a> 
+              </div>
             </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://picsum.photos/id/1005/300/200"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="card-title">
+                        Donations <br />
+                        23 Aug 2020
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="https://picsum.photos/id/1002/50"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://picsum.photos/id/1005/300/200"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="card-title">
+                        Donations <br />
+                        23 Aug 2020
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="https://picsum.photos/id/1002/50"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://picsum.photos/id/1005/300/200"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="card-title">
+                        Donations <br />
+                        23 Aug 2020
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="https://picsum.photos/id/1002/50"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://picsum.photos/id/1005/300/200"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="card-title">
+                        Donations <br />
+                        23 Aug 2020
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="https://picsum.photos/id/1002/50"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://picsum.photos/id/1005/300/200"
+                  alt="Card image"
+                />
+                <div class="card-img-overlay">
+                  <div class="row">
+                    <div class="col-6">
+                      <p class="card-title">
+                        Donations <br />
+                        23 Aug 2020
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <img
+                        src="https://picsum.photos/id/1002/50"
+                        alt="Card image cap"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a style="margin-left: 82rem" class="mt-3" href="#">See More</a>
+          </div>
         </div>
-    </main>    
+      </div>
+    </main>
     <!-- footer -->
     <div class="footer">
-        <div class="container">
-            <div class="row ">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
-                    <h2>Create and share your events</h2>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6 ">
-                    <a class="btn btn-info" style="float:right;" role="button">Get Started</a>
-                </div>
-            </div>
-            <hr class="footer-line">
-            <div class="row ">
-                <!-- footer-about -->
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                    <div class="footer-widget ">
-                        <div class="footer-title">Company</div>
-                        <ul class="list-unstyled">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Press</a></li>
-                            <li><a href="#">Legal & Privacy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /.footer-about -->
-                <!-- footer-links -->
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                    <div class="footer-widget">
-                        <div class="footer-title">Quick Links</div>
-                        <ul class="list-unstyled">
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /.footer-links -->
-                <!-- footer-links -->
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                    <div class="footer-widget ">
-                        <div class="footer-title">Social</div>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Google +</a></li>
-                            <li><a href="#">Linked In</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /.footer-links -->
-                <!-- footer-links -->
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto ">
-                    <div class="footer-widget ">
-                        <div class="ft-logo"><img src="https://picsum.photos/id/237/250" alt=""></div>
-                    </div>
-                </div>
-                <!-- /.footer-links -->
-                <!-- tiny-footer -->
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-3 col-md-4 col-sm-12 col-auto ">
-                    <i>icon</i>
-                    <i>icon</i>
-                    <i>icon</i>
-                    <i>icon</i>
-                    <i>icon</i>
-                </div>    
-                <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-auto ">
-                    +1 (415) 359 456 9
-                </div>    
-                <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-auto ">
-                    support@company.com
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
-                    <div class="tiny-footer">
-                        <div class="row">
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                                English
-                            </div>    
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                                SayItSocial 2020. All Rights Reserved
-                            </div>    
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                                Privacy Policy
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                                Terms and Conditions
-                            </div>        
-                        </div>
-                    </div>
-                </div>
-                <!-- /. tiny-footer -->
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+            <h2>Create and share your events</h2>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-10">
+            <a
+              class="btn btn-info btn-getStarted"
+              style="float: right"
+              role="button"
+              >Get Started</a
+            >
+          </div>
         </div>
+        <hr class="footer-line" />
+        <div class="row">
+          <!-- footer-about -->
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="footer-widget">
+              <div class="footer-title">Company</div>
+              <ul class="list-unstyled">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Legal & Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer-about -->
+          <!-- footer-links -->
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="footer-widget">
+              <div class="footer-title">Quick Links</div>
+              <ul class="list-unstyled">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer-links -->
+          <!-- footer-links -->
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="footer-widget">
+              <div class="footer-title">Social</div>
+              <ul class="list-unstyled">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Google +</a></li>
+                <li><a href="#">Linked In</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer-links -->
+          <!-- footer-links -->
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto">
+            <div class="footer-widget">
+              <div class="ft-logo">
+                <a href=""
+                  ><img
+                    class="img-playstore"
+                    src="/static/assets/navbar/playstore_badge.svg"
+                    alt=""
+                /></a>
+                <a href=""
+                  ><img
+                    class="img-appstore"
+                    src="/static/assets/navbar/appstore_badge.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- /.footer-links -->
+          <!-- tiny-footer -->
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-3 col-md-4 col-sm-12 col-auto">
+            <i>icon</i>
+            <i>icon</i>
+            <i>icon</i>
+            <i>icon</i>
+            <i>icon</i>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-auto">
+            +1 (415) 359 456 9
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-auto">
+            support@company.com
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center"
+          >
+            <div class="tiny-footer">
+              <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                  English
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                  SayItSocial 2020. All Rights Reserved
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                  Privacy Policy
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                  Terms and Conditions
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /. tiny-footer -->
+        </div>
+      </div>
     </div>
     <!-- /.footer -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
     <script>
-        $(document).ready(function() {
-            var ctx = $("#doughnutChart");
-            var myLineChart = new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: [],
-                    datasets: [{
-                        data: [1200, 1700, 800, 200],
-                        backgroundColor: ["rgba(255, 0, 0, 0.5)", "rgba(100, 255, 0, 0.5)", "rgba(200, 50, 255, 0.5)", "rgba(0, 100, 255, 0.5)"],
-                        borderWidth: 0,
-                    }]
-                },
-                options: {
-                    responsive: true, labels: false
-                },
-            });
+      $(document).ready(function () {
+        var ctx = $("#doughnutChart");
+        var myLineChart = new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            labels: [],
+            datasets: [
+              {
+                data: [1200, 1700, 800, 200],
+                backgroundColor: [
+                  "rgba(255, 0, 0, 0.5)",
+                  "rgba(100, 255, 0, 0.5)",
+                  "rgba(200, 50, 255, 0.5)",
+                  "rgba(0, 100, 255, 0.5)",
+                ],
+                borderWidth: 0,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            labels: false,
+          },
         });
+      });
     </script>
   </body>
 </html>

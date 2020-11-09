@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="" />
-    <title>Individual Pofile</title>
+    <title>Organization Pofile</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -18,10 +18,6 @@
     />
     <link rel="stylesheet" href="/static/css/profile.css" />
     <link rel="stylesheet" href="/static/css/navbarfooter.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <style>
     html {
@@ -93,38 +89,36 @@
   <body>
     <!-- //Header -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light row">
-        <div class="col-md-3">
-          <a class="navbar-brand d-flex text-dark align-items-center" href="#">
-            <img
-              src="/static/assets/navbar/sayitsocial.svg"
-              class="d-inline-block align-top mr-2"
-              alt=""
-            />
-            <div class="mb-1">SayItSocial</div>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="col-md-6">
-          <form class="form-inline my-2 my-lg-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white border-bottom mb-3"
+      >
+        <a class="navbar-brand" href="#"
+          ><img src="/static/assets/navbar/sayitsocial.svg" /> SayItSocial</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form
+          class="navbar-form form-inline my-3 my-lg-0 ml-auto"
+          role="search"
+        >
+          <div class="form-group">
             <input
-              class="form-control mr-sm-2 ml-md-5 w-75"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
+              type="text"
+              class="form-control searchbar"
+              placeholder="Search Events/NGOS..."
             />
-          </form>
-        </div>
+          </div>
+          <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+        </form>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -153,189 +147,44 @@
     </header>
 
     <main>
-      <div class="jumbotron">
-        <div class="row">
-          <a class="btn btn-basic align-right" role="button"
-            ><img
-              class="btn-settings"
-              src="/static/assets/navbar/bx-cog.svg"
-              alt=""
-          /></a>
-        </div>
-        <div class="profile-wrapper col-sm-12 mx-auto">
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto">
-              <img
-                class="profile-img"
-                src="/static/assets/profile/demo-profile.png"
-              />
+      <div class="jumbotron banner mt-5 banner-background">
+        <div class="banner-info row">
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto">
+            <div class="banner-card">
+              <h6><span> icon </span> Sat. 15 Aug. 2020 at 04:00 PM</h6>
             </div>
-
-            <div
-              class="profile-info col-xl-5 col-lg-5 col-md-12 col-sm-12 col-auto"
-            >
-              <h1>Aniket Devgune</h1>
-              <h4><b>Member Since :</b> Aug 2020</h4>
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto">
-                  <h1>24</h1>
-                  <p>Events Attended</p>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto">
-                  <h1>24</h1>
-                  <p>Events Hosted</p>
-                </div>
-              </div>
-            </div>
-            <div class="section col-xl-4 col-lg-2 col-md-12 col-sm-12 col-auto">
-              <span class="points"
-                ><img
-                  class="img-medal"
-                  src="/static/assets/profile/medal.svg"
-                  alt="Card image cap"
-                />300</span
-              >
-              <h4 class="h4-points">points</h4>
-              <a
-                class="btn btn-primary btn-view"
-                href="index2.html"
-                role="button"
-                >View Past Events</a
-              >
-            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto">
+            <h4>
+              <span class="mr-auto"><i>icon</i> 300 Attendees</span>
+            </h4>
           </div>
         </div>
       </div>
-      <div class="jumbotron">
-        <div class="contribution col-sm-12 mx-auto mb-5">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-auto">
-              <h3>Aniket's Contribution</h3>
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-auto">
-                  <canvas width="100" height="100" id="doughnutChart"></canvas>
-                </div>
-                <div
-                  class="events col-xl-6 col-lg-6 col-md-6 col-sm-12 col-auto"
-                >
-                  <h1>Events</h1>
-                  <ul>
-                    <li>
-                      <h4>
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-circle btn-xsm"
-                        >
-                          &nbsp;
-                        </button>
-                        Education
-                      </h4>
-                    </li>
-                    <li>
-                      <h4>
-                        <button
-                          type="button"
-                          class="btn btn-warning btn-circle btn-xsm"
-                        >
-                          &nbsp;
-                        </button>
-                        Donations
-                      </h4>
-                    </li>
-                    <li>
-                      <h4>
-                        <button
-                          type="button"
-                          class="btn btn-info btn-circle btn-xsm"
-                        >
-                          &nbsp;
-                        </button>
-                        Environment
-                      </h4>
-                    </li>
-                  </ul>
+      <div class="jumbotron banner mt-5">
+        <div class="custom-flex row">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto">
+            <h1>Blood Donation Camp</h1>
+            <h5>Category: Donations</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna
+            </p>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto">
+                <div class="org-logo">
+                  <img src="/static/assets/charity_tree.png" alt="" />
                 </div>
               </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-auto">
-              <div class="interest col-sm-12 mx-auto">
-                <h3>Aniket's Interest</h3>
-                <div class="row mb-3">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                    <div class="card">
-                      <img
-                        class="card-img-top"
-                        src="https://picsum.photos/id/1005/300/200"
-                        alt="Card image"
-                      />
-                      <div class="card-img-overlay">
-                        <p class="card-title">Donations</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                    <div class="card">
-                      <img
-                        class="card-img-top"
-                        src="https://picsum.photos/id/1005/300/200"
-                        alt="Card image"
-                      />
-                      <div class="card-img-overlay">
-                        <p class="card-title">Donations</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                    <div class="card">
-                      <img
-                        class="card-img-top"
-                        src="https://picsum.photos/id/1005/300/200"
-                        alt="Card image"
-                      />
-                      <div class="card-img-overlay">
-                        <p class="card-title">Donations</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                    <div class="card">
-                      <img
-                        class="card-img-top"
-                        src="https://picsum.photos/id/1005/300/200"
-                        alt="Card image"
-                      />
-                      <div class="card-img-overlay">
-                        <p class="card-title">Donations</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                    <div class="card">
-                      <img
-                        class="card-img-top"
-                        src="https://picsum.photos/id/1005/300/200"
-                        alt="Card image"
-                      />
-                      <div class="card-img-overlay">
-                        <p class="card-title">Donations</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                    <div class="card">
-                      <img
-                        class="card-img-top"
-                        src="https://picsum.photos/id/1005/300/200"
-                        alt="Card image"
-                      />
-                      <div class="card-img-overlay">
-                        <p class="card-title">Donations</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-auto">
+                <h5 class="org-name">Organised by <br />Prayasa</h5>
               </div>
             </div>
           </div>
@@ -495,7 +344,6 @@
           options: {
             responsive: true,
             labels: false,
-            cutoutPercentage: 30,
           },
         });
       });
