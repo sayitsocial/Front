@@ -38,16 +38,15 @@ body {
 }
 
 .ft-logo .img-playstore {
-  width: 190px;
+  width: 150px;
   height: 70px;
-  margin-left: -50px;
+  margin-left: -150px;
 }
 
 .ft-logo .img-appstore {
-  width: 200px;
+  width: 150px;
   height: 90px;
-  margin-top: -10px;
-  margin-left: -20px;
+  margin-left: 10px;
 }
 
 /*####### NAVBAR #########*/
@@ -92,5 +91,6 @@ body {
 .navbar-nav li {
   margin-right: 2rem;
 }
+
 
 /*#######################*/

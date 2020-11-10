@@ -10,7 +10,8 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 	<title>Signup!</title>
 	<link rel="stylesheet" href="/static/css/main.css">
-	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 </head>
 
 <body style="height: 100vh" class="m-0 p-0">
@@ -23,13 +24,10 @@
 		<div class="col-md-12">
 			<div class="signup-top">
 				<nav class="navbar navbar-expand-lg navbar-light d-flex">
-					<a class="navbar-brand" href="#">SayItSocial
-						<!-- <img
-						src="assets/Sayitsocial icon.svg"
-						style="height: 125px;"
-						class=""
-					/> -->
-					</a>
+					<div class="logo-container">
+          <img src="/static/assets/navbar/sayitsocial.svg" class="img-fluid logo" />
+          <a class="navbar-brand" href="#">SayItSocial</a>
+         </div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -55,8 +53,7 @@
 			<div class="signup-bottom">
 				<div class="row">
 					<div class="col-md-5">
-						<img src="/static/assets/register/choose-identity-model.png"
-							class="img-fluid signup-img-1" />
+						<img src="/static/assets/register/choose-identity-model.png" class="img-fluid signup-img-1" />
 						<!-- <img
 								src="assets/register/about-you-model.png"
 								class="img-fluid signup-img-2"
@@ -88,14 +85,14 @@
 									<div class="col-md-12 d-flex">
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="choose-identity"
-												id="individual" value="individual" checked required/>
+												id="individual" value="individual" checked required />
 											<label class="form-check-label" for="individual">
 												Individual
 											</label>
 										</div>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="choose-identity"
-												id="organisation" value="organisation" required/>
+												id="organisation" value="organisation" required />
 											<label class="form-check-label" for="organisation">
 												Organisation
 											</label>
@@ -113,125 +110,134 @@
 							</div>
 
 							<div class="common-1 hidden">
-                                    <p class="display-4  font-weight-bold">Let's Get Started</p>
-                                    <h4 class="text-muted">Tell Us About You</h4>
-                                    <div class="inputs ">
-                                        <div class="d-flex justify-content-between">
-                                            <input class="hidden" id="firstName" placeholder="First Name" type="text" required>
-											<input class="hidden" id="lastName" type="text" placeholder="Last Name" required>
-											<input class="hidden" id="org-name" type="text" placeholder="Organisation name" required>
-                                        </div>
-                                       
-                                        <div class="d-flex flex-column">
-                                            <input type="email" id="email" placeholder="Email" required><br>
-                                            <input type="password" id="password" placeholder="Password" required>
-                                        </div>
-                                    </div>
-                                    <div class="buttons d-flex form2-buttons justify-content-between">
-                                        <button class="btn btn-back btn-dark bg-light text-dark">Back</button>
-                                        <button class="btn btn-next btn-danger">Next</button>
-                                    </div>
-							</div> 
-								
-							<div class="hidden common-2 d-flex flex-column ">
-                                    <p class="display-4 ">You're Onboard :)</p>
-                                    <h5 class="text-muted">Cheers! Your Account is all Set</h5>
-                                    <button class="btn btn-launch btn-danger">Launch</button>
+								<p class="display-4  font-weight-bold">Let's Get Started</p>
+								<h4 class="text-muted">Tell Us About You</h4>
+								<div class="inputs ">
+									<div class="d-flex justify-content-between">
+										<input class="hidden" id="firstName" placeholder="First Name" type="text"
+											required>
+										<input class="hidden" id="lastName" type="text" placeholder="Last Name"
+											required>
+										<input class="hidden" id="org-name" type="text" placeholder="Organisation name"
+											required>
+									</div>
+
+									<div class="d-flex flex-column">
+										<input type="email" id="email" placeholder="Email" required><br>
+										<input type="password" id="password" placeholder="Password" required>
+									</div>
+								</div>
+								<div class="buttons d-flex form2-buttons justify-content-between">
+									<button class="btn btn-back btn-dark bg-light text-dark">Back</button>
+									<button class="btn btn-next btn-danger">Next</button>
+								</div>
 							</div>
-							
+
+							<div class="hidden common-2 d-flex flex-column ">
+								<p class="display-4 ">You're Onboard :)</p>
+								<h5 class="text-muted">Cheers! Your Account is all Set</h5>
+								<button class="btn btn-launch btn-danger">Launch</button>
+							</div>
+
 							<div class="org-choice hidden">
-									<div class="card-group">
-										<div class="card text-center">
-										  <img class="card-img-top img-fluid mx-auto" src="/static/assets/register/ngo-icon.svg" alt="Card image cap">
-										  <div class="card-body">
+								<div class="card-group">
+									<div class="card text-center">
+										<img class="card-img-top img-fluid mx-auto"
+											src="/static/assets/register/ngo-icon.svg" alt="Card image cap">
+										<div class="card-body">
 											<p class="card-title font-weight-normal">NGO</p>
-										  </div>
-										</div>
-										<div class="card text-center">
-										  <img class="card-img-top img-fluid mx-auto" src="/static/assets/register/company-icon.svg" alt="Card image cap">
-										  <div class="card-body">
-											<p class="card-title font-weight-normal">Company</p>											
-										  </div>
-										</div>
-										<div class="card text-center">
-										  <img class="card-img-top img-fluid mx-auto" src="/static/assets/register/social-group-icon.svg" alt="Card image cap">
-										  <div class="card-body">
-											<p class="card-title font-weight-normal">Social Group</p>											
-										  </div>
-										</div>
-									  </div>
-									  <hr>
-									  <div class="row">
-										<div class="col-md-12">
-											<div class="buttons org-choice-buttons d-flex justify-content-between">
-												<button class="btn btn-back text-dark bg-light ">Back</button>
-												<button class="btn btn-next btn-danger">Next</button>
-											</div>
 										</div>
 									</div>
-								</div> 
-
-								<div class="org-1 hidden">
-									<h2 class="fs-title">Tell Us About Organisation</h2>
-                                    <h3 class="fs-subtitle text-muted">Location </h3>
-                                    <div class="row">
-                                        <div class="col-md-12">
-											<div class="location-card">
-												<select id="locations" name="locations" required>
-													<option value="Pune">Pune, MH</option>
-													<option value="Mumbai">Mumbai, MH</option>
-													<option value="Kolhapur">Kolhapur, MH</option>
-													<option value="Satara">Satara, MH</option>
-												</select>
-												<button class="btn-locate"><i class="fa fa-map-marker"></i>Locate</button>     
-											</div>         
-                                        </div>
-                                    </div><br>
-                                    <input type="text" name="president" id="president" placeholder="President of Head" required/><br>
-                                    <input type="text" name="Registration" id="regno" placeholder="Registration No." required/><br>
-                                    <p class="text-muted">Please enter your organization registration number of <br><a href="">www.ngodarpan.gov.in.</a> If not registered leave blank</p>
-									<hr>
-									<div class="row">
-										<div class="col-md-12">
-											<div class="buttons org-info-buttons d-flex justify-content-between">
-												<button class="btn btn-back text-dark bg-light ">Back</button>
-												<button class="btn btn-next btn-danger">Next</button>
-											</div>
+									<div class="card text-center">
+										<img class="card-img-top img-fluid mx-auto"
+											src="/static/assets/register/company-icon.svg" alt="Card image cap">
+										<div class="card-body">
+											<p class="card-title font-weight-normal">Company</p>
 										</div>
-									</div> 
+									</div>
+									<div class="card text-center">
+										<img class="card-img-top img-fluid mx-auto"
+											src="/static/assets/register/social-group-icon.svg" alt="Card image cap">
+										<div class="card-body">
+											<p class="card-title font-weight-normal">Social Group</p>
+										</div>
+									</div>
 								</div>
+								<hr>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="buttons org-choice-buttons d-flex justify-content-between">
+											<button class="btn btn-back text-dark bg-light ">Back</button>
+											<button class="btn btn-next btn-danger">Next</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="org-1 hidden">
+								<h2 class="fs-title">Tell Us About Organisation</h2>
+								<h3 class="fs-subtitle text-muted">Location </h3>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="location-card">
+											<select id="locations" name="locations" required>
+												<option value="Pune">Pune, MH</option>
+												<option value="Mumbai">Mumbai, MH</option>
+												<option value="Kolhapur">Kolhapur, MH</option>
+												<option value="Satara">Satara, MH</option>
+											</select>
+											<button class="btn-locate"><i class="fa fa-map-marker"></i>Locate</button>
+										</div>
+									</div>
+								</div><br>
+								<input type="text" name="president" id="president" placeholder="President of Head"
+									required /><br>
+								<input type="text" name="Registration" id="regno" placeholder="Registration No."
+									required /><br>
+								<p class="text-muted">Please enter your organization registration number of <br><a
+										href="">www.ngodarpan.gov.in.</a> If not registered leave blank</p>
+								<hr>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="buttons org-info-buttons d-flex justify-content-between">
+											<button class="btn btn-back text-dark bg-light ">Back</button>
+											<button class="btn btn-next btn-danger">Next</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="right-bar">
+				<img src="/static/assets/register/right.png" />
+			</div>
 		</div>
-		<div class="right-bar">
-			<img src="/static/assets/register/right.png" />
-		</div>
-	</div>
-	<!-- ############################################################### -->
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172447429-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-		gtag("config", "UA-172447429-1");
-	</script>
+		<!-- ############################################################### -->
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172447429-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-172447429-1");
+		</script>
 
-	<script src="/static/js/script.js"></script>
+		<script src="/static/js/script.js"></script>
 </body>
 
 </html>
