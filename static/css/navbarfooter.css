@@ -1,0 +1,96 @@
+body {
+  overflow-x: hidden;
+}
+.btn-getStarted {
+  padding: 0.8rem 2.5rem;
+  background: none;
+  border: 2px solid white;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.footer-line {
+  margin: 1rem 0 !important;
+}
+
+.container-fluid {
+  margin: 0 5rem 0 5rem !important;
+}
+
+/*#########FOOTER#######*/
+.ft-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 10vh;
+  width: 50vh;
+  position: relative;
+}
+
+.ft-logo img {
+  border-radius: 0px;
+}
+
+.ft-logo .img-playstore {
+  width: 150px;
+  height: 70px;
+  margin-left: -150px;
+}
+
+.ft-logo .img-appstore {
+  width: 150px;
+  height: 90px;
+  margin-left: 10px;
+}
+
+/*####### NAVBAR #########*/
+
+.navbar-brand {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+  font-stretch: expanded;
+  font-weight: 400;
+}
+
+.navbar-brand img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.navbar-form {
+  width: 20vw;
+}
+
+.navbar-form .searchbar {
+  width: 400px;
+}
+
+.navbar-nav {
+  margin-right: 25em;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.navbar-nav .nav-item img {
+  border-radius: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.navbar-nav li {
+  margin-right: 2rem;
+}
+
+
+/*#######################*/

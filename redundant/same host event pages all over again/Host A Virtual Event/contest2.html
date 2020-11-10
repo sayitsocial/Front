@@ -1,0 +1,1193 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="" />
+    <title>Individual Pofile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    html {
+      font-size: 14px;
+      overflow-x: hidden;
+    }
+    main {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .container {
+      max-width: 1250px;
+    }
+    .jumbotron {
+      padding: 2rem 2rem;
+    }
+    a.btn.btn-basic.align-right {
+      margin-left: auto;
+      margin-top: -25px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #111111;
+      padding-top: 80px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 17px;
+    }
+    .footer-line {
+      border-color: #afafaf;
+    }
+    .footer-widget {
+      padding-bottom: 50px;
+    }
+    .footer-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 44px;
+      color: #fff;
+    }
+    .footer-widget ul li a {
+      text-transform: capitalize;
+      font-size: 17px;
+      color: #fff;
+      display: block;
+      font-weight: 600;
+    }
+    .footer-widget ul li a:hover {
+      color: #fff;
+    }
+    .tiny-footer {
+      font-size: 14px;
+      padding: 25px 0px;
+      font-weight: 600;
+      background-color: transparent;
+      border-top: 1px solid #afafaf;
+      color: #888d90;
+      line-height: 1;
+    }
+
+    /* Calendar */
+    .calendar,
+    .calendar_weekdays,
+    .calendar_content {
+      max-width: 300px;
+    }
+    .calendar {
+      margin: auto;
+      font-family: "Muli", sans-serif;
+      font-weight: 400;
+    }
+    .calendar_content,
+    .calendar_weekdays,
+    .calendar_header {
+      position: relative;
+      overflow: hidden;
+    }
+    .calendar_weekdays div {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .calendar_weekdays div,
+    .calendar_content div {
+      width: 14.28571%;
+      overflow: hidden;
+      text-align: center;
+      background-color: transparent;
+      color: #6f6f6f;
+      font-size: 14px;
+    }
+    .calendar_content div {
+      border: 1px solid transparent;
+      float: left;
+    }
+    .calendar_content div:hover {
+      border: 1px solid #dcdcdc;
+      cursor: default;
+    }
+    .calendar_content div.blank:hover {
+      cursor: default;
+      border: 1px solid transparent;
+    }
+    .calendar_content div.past-date {
+      color: #d5d5d5;
+    }
+    .calendar_content div.today {
+      font-weight: bold;
+      font-size: 14px;
+      color: #87b633;
+      border: 1px solid #dcdcdc;
+    }
+    .calendar_content div.selected {
+      background-color: #f0f0f0;
+    }
+    .calendar_header {
+      width: 100%;
+      text-align: center;
+    }
+    .calendar_header h2 {
+      padding: 0 10px;
+      font-family: "Muli", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: #87b633;
+      float: left;
+      width: 70%;
+      margin: 0 0 10px;
+    }
+    button.switch-month {
+      background-color: transparent;
+      padding: 0;
+      outline: none;
+      border: none;
+      color: #dcdcdc;
+      float: left;
+      width: 15%;
+      transition: color 0.2s;
+    }
+    button.switch-month:hover {
+      color: #87b633;
+    }
+
+    /* //Media Query */
+    @media (min-width: 768px) {
+      html {
+        font-size: 16px;
+      }
+    }
+
+    /* //MS FORM */
+    /*form styles*/
+    #msform {
+      /* width: 400px; */
+      margin: 50px auto;
+      /* text-align: center; */
+      position: relative;
+    }
+    #msform fieldset {
+      /* background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+      padding: 20px 30px;
+      box-sizing: border-box;
+      width: 80%;
+      margin: 0 10%;
+
+      /*stacking fieldsets above each other*/
+      position: relative;
+    }
+    /*Hide all except first fieldset*/
+    #msform fieldset:not(:first-of-type) {
+      display: none;
+    }
+    /*inputs*/
+    #msform input,
+    #msform textarea {
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: montserrat;
+      color: #2c3e50;
+      font-size: 13px;
+    }
+    /*buttons*/
+    #msform .action-button {
+      width: 100px;
+      background: #27ae60;
+      font-weight: bold;
+      color: white;
+      border: 0 none;
+      border-radius: 1px;
+      cursor: pointer;
+      padding: 10px 5px;
+      margin: 10px 5px;
+    }
+    #msform .action-button:hover,
+    #msform .action-button:focus {
+      box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+    }
+    /*headings*/
+    .fs-title {
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .fs-subtitle {
+      font-weight: normal;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    /*progressbar*/
+    #progressbar {
+      margin-bottom: 30px;
+      overflow: hidden;
+      /*CSS counters to number the steps*/
+      counter-reset: step;
+    }
+    #progressbar li {
+      list-style-type: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 9px;
+      width: 20.33%;
+      float: left;
+      position: relative;
+    }
+    #progressbar li:before {
+      content: counter(step);
+      counter-increment: step;
+      width: 20px;
+      line-height: 20px;
+      display: block;
+      font-size: 10px;
+      color: #333;
+      background: white;
+      border-radius: 3px;
+      margin: 0 auto 5px auto;
+    }
+    /*progressbar connectors*/
+    #progressbar li:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: white;
+      position: absolute;
+      left: -50%;
+      top: 9px;
+      z-index: -1; /*put it behind the numbers*/
+    }
+    #progressbar li:first-child:after {
+      /*connector not needed before the first step*/
+      content: none;
+    }
+    /*marking active/completed steps green*/
+    /*The number of the step and the connector before it = green*/
+    #progressbar li.active:before,
+    #progressbar li.active:after {
+      background: #27ae60;
+      color: white;
+    }
+  </style>
+  <body>
+    <!-- //Header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white border-bottom mb-3"
+      >
+        <a class="navbar-brand" href="#"
+          ><img src="https://picsum.photos/id/1005/50" /> SayItSocial</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form
+          class="navbar-form form-inline my-2 my-lg-0 ml-auto"
+          role="search"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Events/NGOS..."
+            />
+          </div>
+          <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> icon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> icon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> icon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> icon</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <img src="https://picsum.photos/id/1015/200" alt="" />
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <!-- multistep form -->
+          <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar" class="text-center">
+              <li class="active text-dark" id="account">
+                <strong>Event type</strong>
+              </li>
+              <li id="personal" class="text-dark">
+                <strong>Contest Period</strong>
+              </li>
+              <li id="details" class="text-dark">
+                <strong>Event Details</strong>
+              </li>
+              <li id="video" class="text-dark">
+                <strong>About Contest</strong>
+              </li>
+              <li id="video" class="text-dark"><strong>Final Step</strong></li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+              <h2 class="fs-title">Choose your event type</h2>
+              <input type="text" name="name" placeholder="Event Name" />
+              <label class="radio-inline">
+                <input type="radio" name="optradio" checked />In-peroson
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Virtual
+              </label>
+              <br />
+              <label for=""> Event Sub-type</label>
+              <div>
+                <select id="cars" name="cars">
+                  <option value="volvo">Contest</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <label for=""> Event Categories</label>
+              <input type="text" name="cpwd" placeholder="Categoty" />
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next Step"
+              />
+            </fieldset>
+            <fieldset>
+              <h2 class="fs-title">Pick a Date & Time</h2>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+                  <div class="calendar calendar-first" id="calendar_first">
+                    <div class="calendar_header">
+                      <button class="switch-month switch-left">
+                        <i class="fa fa-chevron-left"></i>
+                      </button>
+                      <h2></h2>
+                      <button class="switch-month switch-right">
+                        <i class="fa fa-chevron-right"></i>
+                      </button>
+                    </div>
+                    <div class="calendar_weekdays"></div>
+                    <div class="calendar_content"></div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+                  <label class="label-in">Time</label>
+                  <input type="time" id="appt" name="appt" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+                  <div class="calendar calendar-second" id="calendar_second">
+                    <div class="calendar_header">
+                      <button class="switch-month switch-left">
+                        <i class="fa fa-chevron-left"></i>
+                      </button>
+                      <h2></h2>
+                      <button class="switch-month switch-right">
+                        <i class="fa fa-chevron-right"></i>
+                      </button>
+                    </div>
+                    <div class="calendar_weekdays"></div>
+                    <div class="calendar_content"></div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+                  <label class="label-in">Time</label>
+                  <input type="time" id="appt" name="appt" />
+                </div>
+              </div>
+
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next Step"
+              />
+            </fieldset>
+            <fieldset>
+              <h2 class="fs-title">Event Details</h2>
+              <label for="">Event description</label>
+              <textarea name="fname" placeholder="First Name"> </textarea>
+
+              <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-8">
+                  <label for="">Contact description</label>
+                  <input type="number" name="name" placeholder="Phone Number" />
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-4">
+                  <label for="">Virtual Points</label>
+                  <input type="number" name="name" placeholder="130" />
+                </div>
+              </div>
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next Step"
+              />
+            </fieldset>
+            <fieldset>
+              <label for="">contest Instructions</label>
+              <textarea
+                name=""
+                id=""
+                placeholder="rules and guidelines"
+              ></textarea>
+
+              <div class="row">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" checked />Image
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" />Video
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" />Audio
+                </label>
+              </div>
+
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next Step"
+              />
+            </fieldset>
+            <fieldset>
+              <h2 class="fs-title text-left">Final Step</h2>
+              <label for=""> Maximum number of partnership</label>
+              <div class="row">
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" checked />Image
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" />
+                  <input
+                    type="text"
+                    name="optradio"
+                    placeholder="Enter a Number"
+                  />
+                </label>
+              </div>
+              <label for=""> upload Image</label>
+              <input
+                type="file"
+                name="name"
+                placeholder="upload webinar thumbnail"
+              />
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="action-button"
+                value="Start Live Stram"
+              />
+            </fieldset>
+          </form>
+        </div>
+        <!-- multistep form -->
+      </div>
+    </main>
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+            <h2>Create and share your events</h2>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-6">
+            <a class="btn btn-info" style="float: right" role="button"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <hr class="footer-line" />
+        <div class="row">
+          <!-- footer-about -->
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="footer-widget">
+              <div class="footer-title">Company</div>
+              <ul class="list-unstyled">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Legal & Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer-about -->
+          <!-- footer-links -->
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="footer-widget">
+              <div class="footer-title">Quick Links</div>
+              <ul class="list-unstyled">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer-links -->
+          <!-- footer-links -->
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="footer-widget">
+              <div class="footer-title">Social</div>
+              <ul class="list-unstyled">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Google +</a></li>
+                <li><a href="#">Linked In</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer-links -->
+          <!-- footer-links -->
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-auto">
+            <div class="footer-widget">
+              <img src="https://picsum.photos/id/100/200/50" alt="" />
+              <div>&nbsp;</div>
+              <img src="https://picsum.photos/id/100/200/50" alt="" />
+            </div>
+          </div>
+          <!-- /.footer-links -->
+          <!-- tiny-footer -->
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-3 col-md-4 col-sm-12 col-auto">
+            <i>icon</i>
+            <i>icon</i>
+            <i>icon</i>
+            <i>icon</i>
+            <i>icon</i>
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-auto">
+            +1 (415) 359 456 9
+          </div>
+          <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6 col-auto">
+            support@company.com
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center"
+          >
+            <div class="tiny-footer">
+              <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                  English
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                  SayItSocial 2020. All Rights Reserved
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                  Privacy Policy
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                  Terms and Conditions
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /. tiny-footer -->
+        </div>
+      </div>
+    </div>
+    <!-- /.footer -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
+
+        $(".next").click(function () {
+          current_fs = $(this).parent();
+          next_fs = $(this).parent().next();
+
+          //Add Class Active
+          $("#progressbar li")
+            .eq($("fieldset").index(next_fs))
+            .addClass("active");
+
+          //show the next fieldset
+          next_fs.show();
+          //hide the current fieldset with style
+          current_fs.animate(
+            {
+              opacity: 0,
+            },
+            {
+              step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
+
+                current_fs.css({
+                  display: "none",
+                  position: "relative",
+                });
+                next_fs.css({
+                  opacity: opacity,
+                });
+              },
+              duration: 600,
+            }
+          );
+        });
+
+        $(".previous").click(function () {
+          current_fs = $(this).parent();
+          previous_fs = $(this).parent().prev();
+
+          //Remove class active
+          $("#progressbar li")
+            .eq($("fieldset").index(current_fs))
+            .removeClass("active");
+
+          //show the previous fieldset
+          previous_fs.show();
+
+          //hide the current fieldset with style
+          current_fs.animate(
+            {
+              opacity: 0,
+            },
+            {
+              step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
+
+                current_fs.css({
+                  display: "none",
+                  position: "relative",
+                });
+                previous_fs.css({
+                  opacity: opacity,
+                });
+              },
+              duration: 600,
+            }
+          );
+        });
+
+        $(".radio-group .radio").click(function () {
+          $(this).parent().find(".radio").removeClass("selected");
+          $(this).addClass("selected");
+        });
+
+        $(".submit").click(function () {
+          return false;
+        });
+
+        //Calendar JS
+        function c(passed_month, passed_year, calNum) {
+          var calendar = calNum == 0 ? calendars.cal1 : calendars.cal2;
+          makeWeek(calendar.weekline);
+          calendar.datesBody.empty();
+          var calMonthArray = makeMonthArray(passed_month, passed_year);
+          var r = 0;
+          var u = false;
+          while (!u) {
+            if (daysArray[r] == calMonthArray[0].weekday) {
+              u = true;
+            } else {
+              calendar.datesBody.append('<div class="blank"></div>');
+              r++;
+            }
+          }
+          for (var cell = 0; cell < 42 - r; cell++) {
+            // 42 date-cells in calendar
+            if (cell >= calMonthArray.length) {
+              calendar.datesBody.append('<div class="blank"></div>');
+            } else {
+              var shownDate = calMonthArray[cell].day;
+              var iter_date = new Date(passed_year, passed_month, shownDate);
+              if (
+                ((shownDate != today.getDate() &&
+                  passed_month == today.getMonth()) ||
+                  passed_month != today.getMonth()) &&
+                iter_date < today
+              ) {
+                var m = '<div class="past-date">';
+              } else {
+                var m = checkToday(iter_date) ? '<div class="today">' : "<div>";
+              }
+              calendar.datesBody.append(m + shownDate + "</div>");
+            }
+          }
+
+          var color = "#444444";
+          calendar.calHeader
+            .find("h2")
+            .text(i[passed_month] + " " + passed_year);
+          calendar.weekline.find("div").css("color", color);
+          calendar.datesBody.find(".today").css("color", "#87b633");
+
+          // find elements (dates) to be clicked on each time
+          // the calendar is generated
+          var clicked = false;
+          selectDates(selected);
+
+          clickedElement = calendar.datesBody.find("div");
+          clickedElement.on("click", function () {
+            clicked = $(this);
+            var whichCalendar = calendar.name;
+
+            if (firstClick && secondClick) {
+              thirdClicked = getClickedInfo(clicked, calendar);
+              var firstClickDateObj = new Date(
+                firstClicked.year,
+                firstClicked.month,
+                firstClicked.date
+              );
+              var secondClickDateObj = new Date(
+                secondClicked.year,
+                secondClicked.month,
+                secondClicked.date
+              );
+              var thirdClickDateObj = new Date(
+                thirdClicked.year,
+                thirdClicked.month,
+                thirdClicked.date
+              );
+              if (
+                secondClickDateObj > thirdClickDateObj &&
+                thirdClickDateObj > firstClickDateObj
+              ) {
+                secondClicked = thirdClicked;
+                // then choose dates again from the start :)
+                bothCals
+                  .find(".calendar_content")
+                  .find("div")
+                  .each(function () {
+                    $(this).removeClass("selected");
+                  });
+                selected = {};
+                selected[firstClicked.year] = {};
+                selected[firstClicked.year][firstClicked.month] = [
+                  firstClicked.date,
+                ];
+                selected = addChosenDates(
+                  firstClicked,
+                  secondClicked,
+                  selected
+                );
+              } else {
+                // reset clicks
+                selected = {};
+                firstClicked = [];
+                secondClicked = [];
+                firstClick = false;
+                secondClick = false;
+                bothCals
+                  .find(".calendar_content")
+                  .find("div")
+                  .each(function () {
+                    $(this).removeClass("selected");
+                  });
+              }
+            }
+            if (!firstClick) {
+              firstClick = true;
+              firstClicked = getClickedInfo(clicked, calendar);
+              selected[firstClicked.year] = {};
+              selected[firstClicked.year][firstClicked.month] = [
+                firstClicked.date,
+              ];
+            } else {
+              secondClick = true;
+              secondClicked = getClickedInfo(clicked, calendar);
+
+              // what if second clicked date is before the first clicked?
+              var firstClickDateObj = new Date(
+                firstClicked.year,
+                firstClicked.month,
+                firstClicked.date
+              );
+              var secondClickDateObj = new Date(
+                secondClicked.year,
+                secondClicked.month,
+                secondClicked.date
+              );
+
+              if (firstClickDateObj > secondClickDateObj) {
+                var cachedClickedInfo = secondClicked;
+                secondClicked = firstClicked;
+                firstClicked = cachedClickedInfo;
+                selected = {};
+                selected[firstClicked.year] = {};
+                selected[firstClicked.year][firstClicked.month] = [
+                  firstClicked.date,
+                ];
+              } else if (
+                firstClickDateObj.getTime() == secondClickDateObj.getTime()
+              ) {
+                selected = {};
+                firstClicked = [];
+                secondClicked = [];
+                firstClick = false;
+                secondClick = false;
+                $(this).removeClass("selected");
+              }
+
+              // add between dates to [selected]
+              selected = addChosenDates(firstClicked, secondClicked, selected);
+            }
+            selectDates(selected);
+          });
+        }
+
+        function selectDates(selected) {
+          if (!$.isEmptyObject(selected)) {
+            var dateElements1 = datesBody1.find("div");
+            var dateElements2 = datesBody2.find("div");
+
+            function highlightDates(passed_year, passed_month, dateElements) {
+              if (
+                passed_year in selected &&
+                passed_month in selected[passed_year]
+              ) {
+                var daysToCompare = selected[passed_year][passed_month];
+                for (var d in daysToCompare) {
+                  dateElements.each(function (index) {
+                    if (parseInt($(this).text()) == daysToCompare[d]) {
+                      $(this).addClass("selected");
+                    }
+                  });
+                }
+              }
+            }
+
+            highlightDates(year, month, dateElements1);
+            highlightDates(nextYear, nextMonth, dateElements2);
+          }
+        }
+
+        function makeMonthArray(passed_month, passed_year) {
+          // creates Array specifying dates and weekdays
+          var e = [];
+          for (
+            var r = 1;
+            r < getDaysInMonth(passed_year, passed_month) + 1;
+            r++
+          ) {
+            e.push({
+              day: r,
+              // Later refactor -- weekday needed only for first week
+              weekday: daysArray[getWeekdayNum(passed_year, passed_month, r)],
+            });
+          }
+          return e;
+        }
+
+        function makeWeek(week) {
+          week.empty();
+          for (var e = 0; e < 7; e++) {
+            week.append("<div>" + daysArray[e].substring(0, 3) + "</div>");
+          }
+        }
+
+        function getDaysInMonth(currentYear, currentMon) {
+          return new Date(currentYear, currentMon + 1, 0).getDate();
+        }
+
+        function getWeekdayNum(e, t, n) {
+          return new Date(e, t, n).getDay();
+        }
+
+        function checkToday(e) {
+          var todayDate =
+            today.getFullYear() +
+            "/" +
+            (today.getMonth() + 1) +
+            "/" +
+            today.getDate();
+          var checkingDate =
+            e.getFullYear() + "/" + (e.getMonth() + 1) + "/" + e.getDate();
+          return todayDate == checkingDate;
+        }
+
+        function getAdjacentMonth(curr_month, curr_year, direction) {
+          var theNextMonth;
+          var theNextYear;
+          if (direction == "next") {
+            theNextMonth = (curr_month + 1) % 12;
+            theNextYear = curr_month == 11 ? curr_year + 1 : curr_year;
+          } else {
+            theNextMonth = curr_month == 0 ? 11 : curr_month - 1;
+            theNextYear = curr_month == 0 ? curr_year - 1 : curr_year;
+          }
+          return [theNextMonth, theNextYear];
+        }
+
+        function b() {
+          today = new Date();
+          year = today.getFullYear();
+          month = today.getMonth();
+          var nextDates = getAdjacentMonth(month, year, "next");
+          nextMonth = nextDates[0];
+          nextYear = nextDates[1];
+        }
+
+        var e = 480;
+
+        var today;
+        var year, month, nextMonth, nextYear;
+
+        var r = [];
+        var i = [
+          "JANUARY",
+          "FEBRUARY",
+          "MARCH",
+          "APRIL",
+          "MAY",
+          "JUNE",
+          "JULY",
+          "AUGUST",
+          "SEPTEMBER",
+          "OCTOBER",
+          "NOVEMBER",
+          "DECEMBER",
+        ];
+        var daysArray = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+
+        var cal1 = $("#calendar_first");
+        var calHeader1 = cal1.find(".calendar_header");
+        var weekline1 = cal1.find(".calendar_weekdays");
+        var datesBody1 = cal1.find(".calendar_content");
+
+        var cal2 = $("#calendar_second");
+        var calHeader2 = cal2.find(".calendar_header");
+        var weekline2 = cal2.find(".calendar_weekdays");
+        var datesBody2 = cal2.find(".calendar_content");
+
+        var bothCals = $(".calendar");
+
+        var switchButton = bothCals
+          .find(".calendar_header")
+          .find(".switch-month");
+
+        var calendars = {
+          cal1: {
+            name: "first",
+            calHeader: calHeader1,
+            weekline: weekline1,
+            datesBody: datesBody1,
+          },
+          cal2: {
+            name: "second",
+            calHeader: calHeader2,
+            weekline: weekline2,
+            datesBody: datesBody2,
+          },
+        };
+
+        var clickedElement;
+        var firstClicked, secondClicked, thirdClicked;
+        var firstClick = false;
+        var secondClick = false;
+        var selected = {};
+
+        b();
+        c(month, year, 0);
+        c(nextMonth, nextYear, 1);
+        switchButton.on("click", function () {
+          var clicked = $(this);
+          var generateCalendars = function (e) {
+            var nextDatesFirst = getAdjacentMonth(month, year, e);
+            var nextDatesSecond = getAdjacentMonth(nextMonth, nextYear, e);
+            month = nextDatesFirst[0];
+            year = nextDatesFirst[1];
+            nextMonth = nextDatesSecond[0];
+            nextYear = nextDatesSecond[1];
+
+            c(month, year, 0);
+            c(nextMonth, nextYear, 1);
+          };
+          if (clicked.attr("class").indexOf("left") != -1) {
+            generateCalendars("previous");
+          } else {
+            generateCalendars("next");
+          }
+          clickedElement = bothCals.find(".calendar_content").find("div");
+        });
+
+        //  Click picking stuff
+        function getClickedInfo(element, calendar) {
+          var clickedInfo = {};
+          var clickedCalendar, clickedMonth, clickedYear;
+          clickedCalendar = calendar.name;
+          clickedMonth = clickedCalendar == "first" ? month : nextMonth;
+          clickedYear = clickedCalendar == "first" ? year : nextYear;
+          clickedInfo = {
+            calNum: clickedCalendar,
+            date: parseInt(element.text()),
+            month: clickedMonth,
+            year: clickedYear,
+          };
+          return clickedInfo;
+        }
+
+        // Finding between dates MADNESS. Needs refactoring and smartening up :)
+        function addChosenDates(firstClicked, secondClicked, selected) {
+          if (
+            secondClicked.date > firstClicked.date ||
+            secondClicked.month > firstClicked.month ||
+            secondClicked.year > firstClicked.year
+          ) {
+            var added_year = secondClicked.year;
+            var added_month = secondClicked.month;
+            var added_date = secondClicked.date;
+
+            if (added_year > firstClicked.year) {
+              // first add all dates from all months of Second-Clicked-Year
+              selected[added_year] = {};
+              selected[added_year][added_month] = [];
+              for (var i = 1; i <= secondClicked.date; i++) {
+                selected[added_year][added_month].push(i);
+              }
+
+              added_month = added_month - 1;
+              while (added_month >= 0) {
+                selected[added_year][added_month] = [];
+                for (
+                  var i = 1;
+                  i <= getDaysInMonth(added_year, added_month);
+                  i++
+                ) {
+                  selected[added_year][added_month].push(i);
+                }
+                added_month = added_month - 1;
+              }
+
+              added_year = added_year - 1;
+              added_month = 11; // reset month to Dec because we decreased year
+              added_date = getDaysInMonth(added_year, added_month); // reset date as well
+
+              // Now add all dates from all months of inbetween years
+              while (added_year > firstClicked.year) {
+                selected[added_year] = {};
+                for (var i = 0; i < 12; i++) {
+                  selected[added_year][i] = [];
+                  for (var d = 1; d <= getDaysInMonth(added_year, i); d++) {
+                    selected[added_year][i].push(d);
+                  }
+                }
+                added_year = added_year - 1;
+              }
+            }
+
+            if (added_month > firstClicked.month) {
+              if (firstClicked.year == secondClicked.year) {
+                selected[added_year][added_month] = [];
+                for (var i = 1; i <= secondClicked.date; i++) {
+                  selected[added_year][added_month].push(i);
+                }
+                added_month = added_month - 1;
+              }
+              while (added_month > firstClicked.month) {
+                selected[added_year][added_month] = [];
+                for (
+                  var i = 1;
+                  i <= getDaysInMonth(added_year, added_month);
+                  i++
+                ) {
+                  selected[added_year][added_month].push(i);
+                }
+                added_month = added_month - 1;
+              }
+              added_date = getDaysInMonth(added_year, added_month);
+            }
+
+            for (var i = firstClicked.date + 1; i <= added_date; i++) {
+              selected[added_year][added_month].push(i);
+            }
+          }
+          return selected;
+        }
+      });
+    </script>
+  </body>
+</html>
