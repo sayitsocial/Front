@@ -1,0 +1,13 @@
+.timeline-head {
+  width: 20%;
+  margin-left: 5%;
+}
+
+.timeline-head .active {
+  color: #0602ff !important;
+}
+
+.timeline-head a {
+  color: black;
+}
+/*# sourceMappingURL=timeline header.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,cAAc,CAAA;EACZ,KAAK,EAAC,GAAG;EACT,WAAW,EAAC,EAAE;CACf;;AAED,AAEE,cAFY,CAEZ,OAAO,CAAA;EACJ,KAAK,EAAE,OAAc,CAAC,UAAU;CAClC;;AAJH,AAME,cANY,CAMZ,CAAC,CAAA;EACE,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "timeline header.scss"
+    ],
+    "names": [],
+    "file": "timeline header.css"
+}

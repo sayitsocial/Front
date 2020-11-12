@@ -23,7 +23,8 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/static/css/navbarfooter.css" />
+    <link rel="stylesheet" href="../../static/css/navbarfooter.css" />
+    <link rel="stylesheet" href="../../static/css/attend.css" />
   </head>
   <style>
     html {
@@ -237,153 +238,102 @@
     </header>
 
     <main>
-      <div class="jumbotron">
-        <div class="text-center">
-          <h3>Your Schedule</h3>
-          <span type="button" class="btn btn-primary btn-circle btn-xsm"
-            >&nbsp;</span
-          >
-          Events You are Attending
-          <div class="calendar calendar-first mt-5" id="calendar_first">
-            <div class="calendar_header">
-              <button class="switch-month switch-left">
-                <i class="fa fa-chevron-left"></i>
-              </button>
-              <h2></h2>
-              <button class="switch-month switch-right">
-                <i class="fa fa-chevron-right"></i>
-              </button>
-            </div>
-            <div class="calendar_weekdays"></div>
-            <div class="calendar_content"></div>
+      <div class="row">
+          <div class="col-lg-3 col-sm-12 col-md-12">
+              <div class="jumbotron">    
+                  <div class="text-center">
+                      <h3 class="mb-4">Your Schedule</h3>
+                      <span type="button" id="attend-show" class="btn btn-danger btn-circle btn-xsm">&nbsp;</span> Events you are attending      
+                      <div class="calendar calendar-first mt-4" id="calendar_first">
+                          <div class="calendar_header">
+                              <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+                               <h2></h2>
+                              <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+                          </div>
+                          <div class="calendar_weekdays"></div>
+                          <div class="calendar_content"></div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-
-        <h3>Events You are Attending</h3>
-        <div class="row mb-3">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-auto">
-            <div class="row mb-3">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="https://picsum.photos/id/1005/300/200"
-                    alt="Card image"
-                  />
-                  <div class="card-img-overlay">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="card-title">Donations 23 Aug 2020 10PM</p>
-                      </div>
-                      <div class="col-6">
-                        <p class="card-title">300 Attenders</p>
-                      </div>
-                    </div>
+          <div class="col-lg-9 col-sm-12 col-md-12">
+              <div class="jumbotron">
+                  <h3>Events You are Hosting</h3>
+                  <div class="row mb-3"> 
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
+                          <div class="card">
+                              <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
+                              <div class="card-img-overlay">
+                                  <div class="row">   
+                                      <div class="col-6"><p class="card-title">Donations 23 Aug 2020 10PM</p></div>
+                                      <div class="col-6"><p class="card-title">300 Attenders</p></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>    
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
+                          <div class="card">
+                              <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
+                              <div class="card-img-overlay">
+                                  <div class="row">   
+                                      <div class="col-6"><p class="card-title">Donations 23 Aug 2020 10PM</p></div>
+                                      <div class="col-6"><p class="card-title">300 Attenders</p></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>    
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
+                          <div class="card">
+                              <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
+                              <div class="card-img-overlay">
+                                  <div class="row">   
+                                      <div class="col-6"><p class="card-title">Donations 23 Aug 2020 10PM</p></div>
+                                      <div class="col-6"><p class="card-title">300 Attenders</p></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>    
                   </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="https://picsum.photos/id/1005/300/200"
-                    alt="Card image"
-                  />
-                  <div class="card-img-overlay">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="card-title">Donations 23 Aug 2020 10PM</p>
-                      </div>
-                      <div class="col-6">
-                        <p class="card-title">300 Attenders</p>
-                      </div>
-                    </div>
+                  <div>&nbsp;</div>
+                  <div class="row mb-3"> 
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
+                          <div class="card">
+                              <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
+                              <div class="card-img-overlay">
+                                  <div class="row">   
+                                      <div class="col-6"><p class="card-title">Donations 23 Aug 2020 10PM</p></div>
+                                      <div class="col-6"><p class="card-title">300 Attenders</p></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>    
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
+                          <div class="card">
+                              <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
+                              <div class="card-img-overlay">
+                                  <div class="row">   
+                                      <div class="col-6"><p class="card-title">Donations 23 Aug 2020 10PM</p></div>
+                                      <div class="col-6"><p class="card-title">300 Attenders</p></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>    
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto ">
+                          <div class="card">
+                              <img class="card-img-top" src="https://picsum.photos/id/1005/300/200" alt="Card image">
+                              <div class="card-img-overlay">
+                                  <div class="row">   
+                                      <div class="col-6"><p class="card-title">Donations 23 Aug 2020 10PM</p></div>
+                                      <div class="col-6"><p class="card-title">300 Attenders</p></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>    
                   </div>
-                </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="https://picsum.photos/id/1005/300/200"
-                    alt="Card image"
-                  />
-                  <div class="card-img-overlay">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="card-title">Donations 23 Aug 2020 10PM</p>
-                      </div>
-                      <div class="col-6">
-                        <p class="card-title">300 Attenders</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="https://picsum.photos/id/1005/300/200"
-                    alt="Card image"
-                  />
-                  <div class="card-img-overlay">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="card-title">Donations 23 Aug 2020 10PM</p>
-                      </div>
-                      <div class="col-6">
-                        <p class="card-title">300 Attenders</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="https://picsum.photos/id/1005/300/200"
-                    alt="Card image"
-                  />
-                  <div class="card-img-overlay">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="card-title">Donations 23 Aug 2020 10PM</p>
-                      </div>
-                      <div class="col-6">
-                        <p class="card-title">300 Attenders</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-auto">
-                <div class="card">
-                  <img
-                    class="card-img-top"
-                    src="https://picsum.photos/id/1005/300/200"
-                    alt="Card image"
-                  />
-                  <div class="card-img-overlay">
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="card-title">Donations 23 Aug 2020 10PM</p>
-                      </div>
-                      <div class="col-6">
-                        <p class="card-title">300 Attenders</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
-    </main>
+  </main>    
     <!-- footer -->
     <div class="footer">
       <div class="container">
