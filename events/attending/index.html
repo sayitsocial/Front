@@ -87,92 +87,87 @@
     }
 
     /* Calendar */
-    .calendar,
-    .calendar_weekdays,
-    .calendar_content {
-      max-width: 300px;
+    .calendar, .calendar_weekdays, .calendar_content {
+        max-width: 300px;
     }
     .calendar {
-      margin: auto;
-      font-family: "Muli", sans-serif;
-      font-weight: 400;
+        margin: auto;
+        font-family:'Muli', sans-serif;
+        font-weight: 400;
     }
-    .calendar_content,
-    .calendar_weekdays,
-    .calendar_header {
-      position: relative;
-      overflow: hidden;
+    .calendar_content, .calendar_weekdays, .calendar_header {
+        position: relative;
+        overflow: hidden;
     }
     .calendar_weekdays div {
-      display: inline-block;
-      vertical-align: top;
+        display:inline-block;
+        vertical-align:top;
     }
-    .calendar_weekdays div,
-    .calendar_content div {
-      width: 14.28571%;
-      overflow: hidden;
-      text-align: center;
-      background-color: transparent;
-      color: #6f6f6f;
-      font-size: 14px;
+    .calendar_weekdays div, .calendar_content div {
+        width: 14.28571%;
+        overflow: hidden;
+        text-align: center;
+        background-color: transparent;
+        color: #6f6f6f;
+        font-size: 14px;
     }
     .calendar_content div {
-      border: 1px solid transparent;
-      float: left;
+        border: 1px solid transparent;
+        float: left;
     }
     .calendar_content div:hover {
-      border: 1px solid #dcdcdc;
-      cursor: default;
+        border: 1px solid #dcdcdc;
+        cursor: default;
     }
     .calendar_content div.blank:hover {
-      cursor: default;
-      border: 1px solid transparent;
+        cursor: default;
+        border: 1px solid transparent;
     }
     .calendar_content div.past-date {
-      color: #d5d5d5;
+        color: #d5d5d5;
     }
     .calendar_content div.today {
-      font-weight: bold;
-      font-size: 14px;
-      color: #87b633;
-      border: 1px solid #dcdcdc;
+        font-weight: bold;
+        font-size: 14px;
+        color: #87b633;
+        border: 1px solid #dcdcdc;
     }
     .calendar_content div.selected {
-      background-color: #f0f0f0;
+        background-color: #f0f0f0;
     }
     .calendar_header {
-      width: 100%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
     }
     .calendar_header h2 {
-      padding: 0 10px;
-      font-family: "Muli", sans-serif;
-      font-weight: 300;
-      font-size: 18px;
-      color: #87b633;
-      float: left;
-      width: 70%;
-      margin: 0 0 10px;
+        padding: 0 10px;
+        font-family:'Muli', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #87b633;
+        float:left;
+        width:70%;
+        margin: 0 0 10px;
     }
     button.switch-month {
-      background-color: transparent;
-      padding: 0;
-      outline: none;
-      border: none;
-      color: #dcdcdc;
-      float: left;
-      width: 15%;
-      transition: color 0.2s;
+        background-color: transparent;
+        padding: 0;
+        outline: none;
+        border: none;
+        color: #dcdcdc;
+        float: left;
+        width:15%;
+        transition: color .2s;
     }
     button.switch-month:hover {
-      color: #87b633;
+        color: #87b633;
     }
 
     /* //Media Query */
     @media (min-width: 768px) {
-      html {
-        font-size: 16px;
-      }
+        html {
+            font-size: 16px;
+        }  
     }
   </style>
   <body>
@@ -182,7 +177,7 @@
         <div class="col-md-3">
           <a class="navbar-brand d-flex text-dark align-items-center" href="#">
             <img
-              src="/static/assets/navbar/sayitsocial.svg"
+              src="../../static/assets/navbar/sayitsocial.svg"
               class="d-inline-block align-top mr-2"
               alt=""
             />
@@ -214,22 +209,22 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#"
-                ><img src="/static/assets/navbar/bx-home-alt.svg" alt=""
+                ><img src="../../static/assets/navbar/bx-home-alt.svg" alt=""
               /></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="/static/assets/navbar/fi-list.svg" alt=""
+                <img src="../../static/assets/navbar/fi-list.svg" alt=""
               /></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="/static/assets/navbar/bx-bell.svg" alt=""
+                <img src="../../static/assets/navbar/bx-bell.svg" alt=""
               /></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="/static/assets/navbar/fi-user.svg" alt=""
+                <img src="../../static/assets/navbar/fi-user.svg" alt=""
               /></a>
             </li>
           </ul>
